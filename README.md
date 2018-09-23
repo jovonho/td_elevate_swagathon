@@ -1,2 +1,2 @@
-# td_elevate_swagathon
-Project for Connected Communities
+# elevatehackswag
+Connected Communities

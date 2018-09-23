@@ -1,0 +1,56 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html>
+  <head>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  </head>
+<body id="LoginForm">
+<div class="container">
+<h1 class="form-heading">Connection</h1>
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+  <!--  <h2>Connection</h2> -->
+   <p>Please enter your TD Customer ID and the number of children in each age category.</p>
+   </div>
+
+    <p style='color:red;'>{{error}}</p>
+    <form action="{{ url_for('handle_data') }}" method="post">
+        <div class='form-group'>
+              <p> Link your TD Account </p>
+              
+              <input name="custId" class='form-control' id="custId" placeholder="TD Customer ID">
+            </div>
+            <p> Please enter your number children in each category: </p>
+            <div>
+              <input name='numInfant' class="form-control" id='numInfant' placeholder="Infant (0 - 18 months)">
+            </div>
+            <div>
+                <input name='numToddler' class="form-control" id='numToddler' placeholder="Toddler (18 months - 2.5 years)">
+            </div>
+            <div>
+                <input name='numPreSchool' class="form-control" id='numPreSchool' placeholder="Preschool (2.5 - 4 years)">
+            </div>
+            <div>
+                <input name='numKinder' class="form-control" id='numKinder' placeholder="Kindergarten (4 - 6 years)">
+            </div>
+            <div>
+                <input name='numSchool' class="form-control" id='numSchool' placeholder="School Age (6+ years)">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Connect</button>
+            </div>
+        </form>
+</div></div></div>
+
+
+</body>
+</html>
