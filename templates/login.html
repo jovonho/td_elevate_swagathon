@@ -8,6 +8,8 @@
   <head>
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -25,14 +27,23 @@
     <p style='color:red;'>{{error}}</p>
     <form action="{{ url_for('handle_data') }}" method="post">
         <div class='form-group'>
-              <p> Link your TD Account </p>
+              <p> Link your TD Account:</p>
               
               <input name="custId" class='form-control' id="custId" placeholder="TD Customer ID">
             </div>
-            <p> Please enter your number children in each category: </p>
+            <p> Enter your work address:</p>
+            <div> 
+              <input name='workAddress' class="form-control" id='workAddress' value="101 College St, Toronto, ON M5G 1L7">
+            </div>
+            <p>Enter your maximum daily cost per child ($):</p>
+            <div> 
+              <input name='dailyCost' class="form-control" id='dailyCost' placeholder="50.00">
+            </div>
+            <p>Enter the number children in each category:</p>
             <div>
               <input name='numInfant' class="form-control" id='numInfant' placeholder="Infant (0 - 18 months)">
             </div>
+
             <div>
                 <input name='numToddler' class="form-control" id='numToddler' placeholder="Toddler (18 months - 2.5 years)">
             </div>
