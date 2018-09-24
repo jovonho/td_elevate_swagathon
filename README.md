@@ -1,5 +1,7 @@
 # Toronto Connection
 
+Made in collaboration with: Ben Willets (https://github.com/bendwilletts), Jeffrey Tsui, Adrian Winkler, Kitan Ademidun, Vatsal Dasai, Kevin Liu and Ashley Xu.
+
 Our project aims to help torontonian families better connect to the resources provided by the city, as well as to eachother.
 
 The city of Toronto has a lot of data regarding child care but it is often difficult for parents, especially recent immigrants who may face  a language barrier, to find the information they need or even know what information they made need.
